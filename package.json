@@ -11,7 +11,7 @@
     "make": "run-s make:mac make:linux make:windows",
     "make:mac": "electron-forge make --platform=darwin",
     "make:linux": "electron-forge make --platform=linux --arch=ia32,x64",
-    "make:windows": "electron-forge make --target=wix",
+    "make:windows": "electron-forge make --platform=win32 --arch=ia32,x64",
     "publish": "electron-forge publish",
     "lint": "eslint --cache --color --ext .jsx,.js src"
   },
